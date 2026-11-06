@@ -60,7 +60,10 @@ export default function Footer() {
         <div className="flex flex-col gap-2 border-t border-white/25 px-2.5 py-4 text-sm leading-[18px] tracking-[-0.1px] md:flex-row md:justify-between">
           <p>{footer.copyright}</p>
           <p>
-            {footer.designedByLabel} {footer.designedBy}
+            {footer.madeBy.label}{' '}
+            <a href={footer.madeBy.href} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-70">
+              {footer.madeBy.name}
+            </a>
           </p>
         </div>
       </div>

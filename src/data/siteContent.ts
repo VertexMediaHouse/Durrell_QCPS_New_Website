@@ -77,8 +77,7 @@ export const footer = {
     { label: 'YouTube', href: '#' },
   ],
   copyright: '© 2026 Quick Close Property Solutions. All rights reserved.',
-  designedByLabel: 'Designed by',
-  designedBy: 'Waqar',
+  madeBy: { label: 'Made by', name: 'Vertex Tech House', href: 'https://vertextechhouse.com' },
 }
 
 export const hero = {
