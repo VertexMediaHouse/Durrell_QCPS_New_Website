@@ -1,9 +1,10 @@
 // Headings use *asterisks* to mark the words rendered in the teal accent color.
 
 export const brand = {
-  // TODO: replace the placeholder house mark with the existing QCPS logo file
   name: 'QCPS',
   fullName: 'Quick Close Property Solutions',
+  wordmarkTitle: 'Quick Close',
+  wordmarkSub: 'Property Solutions',
 }
 
 export const ui = {
@@ -19,13 +20,20 @@ export const ui = {
 export const navCta = { label: 'Get My Cash Offer', href: '/get-offer' }
 export const processCta = { label: 'How Our Process Works', href: '/how-it-works' }
 
+// Header menu mirrors the original QCPS site: company pages grouped under a "Company" dropdown.
+export const navCompany = {
+  label: 'Company',
+  items: [
+    { label: 'How It Works', href: '/how-it-works' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Who We Help', href: '/who-we-help' },
+    { label: 'Areas We Serve', href: '/areas' },
+  ],
+}
+
 export const nav = [
   { label: 'Home', href: '/' },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'About Us', href: '/about' },
-  { label: 'Who We Help', href: '/who-we-help' },
   { label: 'Cash Offer vs. Agent', href: '/cash-vs-agent' },
-  { label: 'Areas We Serve', href: '/areas' },
   { label: 'Why Sellers Choose Us', href: '/why-sellers-choose-us' },
   { label: 'FAQ', href: '/faq' },
 ]

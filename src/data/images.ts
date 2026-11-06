@@ -70,8 +70,7 @@ import team2 from '../assets/images/image-fe6a5d94.png'
 import team3 from '../assets/images/image-055a0ba4.png'
 
 // Icons
-import logoMark from '../assets/images/icon-e97ee0c3-navy.svg' // TODO: replace with the real QCPS logo file
-import footerMark from '../assets/images/image-e97ee0c3.svg'
+import logoMark from '../assets/images/qcps-mark.png'
 import arrowWhite from '../assets/images/image-149e754e.svg'
 import chevronLeft from '../assets/images/image-2e3af917.svg'
 import chevronRight from '../assets/images/image-a174e8af.svg'
@@ -173,7 +172,6 @@ export const images = {
 
 export const icons = {
   logoMark,
-  footerMark,
   arrowWhite,
   chevronLeft,
   chevronRight,

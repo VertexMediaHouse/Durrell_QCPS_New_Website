@@ -17,8 +17,8 @@ export default function PageHero({ badge, title, subtitle, image, children }: Pr
   return (
     <section className="p-4 md:p-5">
       <div
-        className={`relative flex flex-col items-center overflow-hidden rounded-[14px] px-5 pt-[150px] text-center md:px-10 md:pt-[160px] ${
-          children ? 'pb-10 md:pb-16' : 'min-h-[520px] justify-center pb-20 md:min-h-[600px]'
+        className={`relative flex flex-col items-center overflow-hidden rounded-[14px] px-5 pt-16 text-center md:px-10 md:pt-20 ${
+          children ? 'pb-10 md:pb-16' : 'min-h-[440px] justify-center pb-16 md:min-h-[520px] md:pb-20'
         }`}
       >
         <motion.img

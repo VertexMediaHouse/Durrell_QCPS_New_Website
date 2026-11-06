@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { ReactNode, SVGProps } from 'react'
 import { icons } from '../data/images'
+import { brand } from '../data/siteContent'
 import Reveal from './Reveal'
 
 export function Accent({ text }: { text: string }) {
@@ -16,6 +17,18 @@ export function Accent({ text }: { text: string }) {
         ),
       )}
     </>
+  )
+}
+
+export function Wordmark({ light = false }: { light?: boolean }) {
+  return (
+    <span className="flex items-center gap-2.5">
+      <img src={icons.logoMark} alt="" width={54} height={60} className="h-[60px] w-[54px] shrink-0 rounded-[8px] object-cover" />
+      <span className={`flex flex-col leading-[1.1] ${light ? 'text-white' : 'text-ink'}`}>
+        <span className="text-[19px] font-bold tracking-[0.04em] uppercase">{brand.wordmarkTitle}</span>
+        <span className="mt-1 text-[10px] font-medium tracking-[0.22em] uppercase">{brand.wordmarkSub}</span>
+      </span>
+    </span>
   )
 }
 

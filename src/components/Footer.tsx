@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { brand, footer, navCta } from '../data/siteContent'
 import { icons } from '../data/images'
+import { Wordmark } from './ui'
 
 export default function Footer() {
   return (
@@ -8,9 +9,8 @@ export default function Footer() {
       <div className="mx-auto max-w-[1400px] rounded-[14px] bg-ink px-5 text-white">
         <div className="flex flex-col gap-12 py-[60px] lg:flex-row lg:justify-between">
           <div className="flex max-w-[600px] flex-col gap-4">
-            <Link to="/" className="flex items-center gap-2 text-4xl leading-10 font-medium">
-              <img src={icons.footerMark} alt="" className="size-9 brightness-0 invert" />
-              {brand.name}
+            <Link to="/" aria-label={brand.fullName} className="w-fit">
+              <Wordmark light />
             </Link>
             <p className="text-lg leading-6 tracking-[-0.1px]">{footer.tagline}</p>
             <ul className="flex gap-6 pt-2">

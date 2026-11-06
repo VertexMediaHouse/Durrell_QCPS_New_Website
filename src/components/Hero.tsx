@@ -23,7 +23,7 @@ export function StatValue({ value }: { value: string }) {
 export default function Hero() {
   return (
     <section className="p-4 md:p-5">
-      <div className="relative flex min-h-[calc(100svh-32px)] flex-col justify-center overflow-hidden rounded-[14px] px-5 pt-[140px] pb-12 md:min-h-[calc(100svh-40px)] md:px-10 md:pt-[200px] md:pb-20 lg:px-20">
+      <div className="relative flex min-h-[calc(100svh-112px)] flex-col justify-center overflow-hidden rounded-[14px] px-5 py-16 md:min-h-[calc(100svh-120px)] md:px-10 md:py-20 lg:px-20">
         <motion.img
           src={heroes.home.src}
           alt={heroes.home.alt}
