@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/bricolage-grotesque-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/bricolage-grotesque-500.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/bricolage-grotesque-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/bricolage-grotesque-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+/* Arial metrics-matched fallback, same overrides Framer ships, so text doesn't reflow when the font loads */
+@font-face {
+  font-family: "Bricolage Grotesque Placeholder";
+  src: local("Arial");
+  ascent-override: 87.18%;
+  descent-override: 25.31%;
+  line-gap-override: 0%;
+  size-adjust: 106.68%;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./assets/fonts/space-grotesk-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bricolage Grotesque", "Bricolage Grotesque Placeholder", sans-serif;
+  color: #17324d;
+  background: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.mask-fade-y {
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+.pause-on-hover:hover > * {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  [class*="animate-ticker"] {
+    animation: none !important;
+  }
+}
